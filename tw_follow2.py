@@ -1,11 +1,11 @@
 import tweepy
 import time
 keys = dict(
-        screen_name = '981000700241981440',
-        consumer_key = 'WJC9oUSgazVNAV4OkZUO1PFLf',
-        consumer_secret = 'jIlU6vm36gzKI5yf9TTrgsENPZT0yMAHDJ4FGUhSLXpdxn6UKL',
-        access_token =  '981000700241981440-x0uHMoy1I1023NPWUCzKVrl2lqUsSJ6',
-        access_token_secret = 'HWMAojeDVRsyQZCwRryRC9XQoK09auQmV4LDXeTTdzQhq'
+        screen_name = '',
+        consumer_key = '',
+        consumer_secret = '',
+        access_token =  '',
+        access_token_secret = ''
     )
 SCREEN_NAME = keys['screen_name']
 CONSUMER_KEY = keys['consumer_key']
@@ -18,7 +18,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 
 follow_cnt = 0
-keyword = "ライザのアトリエ"
+keyword = "検索キーワード"
 a_cnt = 40
 
 search_results = api.search(q=keyword, count=a_cnt)
